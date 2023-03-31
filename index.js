@@ -26,3 +26,11 @@ formEle.addEventListener("submit", () => {
 function updateLocalStorage() {
   localStorage.setItem("score", JSON.stringify(score));
 }
+
+const btEle=document.querySelector(".btn");
+btEle.addEventListener("mouseover",(event)=>{
+const x =event.pageX-btEle.offsetLeft;
+const y= event.pageY-btEle.offsetTop;
+ btEle.style.setProperty("--xPos",x+"px");
+ btEle.style.setProperty("--yPos",y+"px");
+});
