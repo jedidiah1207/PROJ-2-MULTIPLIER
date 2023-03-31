@@ -1,5 +1,6 @@
 const x = Math.ceil(Math.random() * 10);
 const y = Math.ceil(Math.random() * 10);
+//setting the correct ans
 const ans = x * y;
 let score = JSON.parse(localStorage.getItem("score"));
 const qele = document.getElementById("question");
